@@ -435,7 +435,7 @@ interface Loopback0
 | --------- | --- | ---------- | ------------------ | ------------------------- | ---- | ------ | ------- |
 | Vlan10 |  default  |  10.10.10.2/24  |  -  |  10.10.10.1  |  -  |  -  |  -  |
 | Vlan20 |  default  |  10.20.20.2/24  |  -  |  10.20.20.1  |  -  |  -  |  -  |
-| Vlan4093 |  default  |  10.1.254.0/31  |  -  |  -  |  -  |  -  |  -  |
+| Vlan4093 |  default  |  10.1.253.2/31  |  -  |  -  |  -  |  -  |  -  |
 | Vlan4094 |  default  |  10.1.253.0/31  |  -  |  -  |  -  |  -  |  -  |
 
 #### VLAN Interfaces Device Configuration
@@ -458,7 +458,7 @@ interface Vlan4093
    description MLAG_PEER_L3_PEERING
    no shutdown
    mtu 1500
-   ip address 10.1.254.0/31
+   ip address 10.1.253.2/31
    ip ospf network point-to-point
    ip ospf area 0.0.0.0
 !
